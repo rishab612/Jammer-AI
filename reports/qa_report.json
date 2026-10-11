@@ -1,0 +1,625 @@
+{
+  "application": "Jammer AI",
+  "report_generated_at": "2026-10-10T21:04:23.961180+05:30",
+  "python_version": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "test_directory": "C:\\AI\\Jammer\\tests",
+  "duration_seconds": 0.1903,
+  "summary": {
+    "tests_run": 101,
+    "passed": 101,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "expected_failures": 0,
+    "unexpected_successes": 0,
+    "successful": true
+  },
+  "tests": [
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_agent_blocks_disabled_python_execution",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_agent_executes_permitted_calculator_tool",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_agent_logs_selection_and_execution",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_chat_handles_normal_message_without_tool",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_chat_handles_selector_exception",
+      "status": "passed",
+      "duration_seconds": 0.0017,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_chat_passes_tool_result_to_model",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_chat_reports_denied_tool_to_model",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_chat_reports_tool_execution_exception",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_agent_integration.TestAgentIntegration.test_terminal_command_guard_prevents_tool_execution",
+      "status": "passed",
+      "duration_seconds": 0.0012,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_addition",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_division",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_division_by_zero",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_empty_expression",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_multiplication",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_power",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_rejects_unsafe_expression",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_calculator.TestCalculatorTool.test_subtraction",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_clear_history",
+      "status": "passed",
+      "duration_seconds": 0.0011,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_conversation_history_is_saved",
+      "status": "passed",
+      "duration_seconds": 0.001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_long_input_does_not_crash",
+      "status": "passed",
+      "duration_seconds": 0.0011,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_model_failure_is_logged_and_raised",
+      "status": "passed",
+      "duration_seconds": 0.0016,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_non_text_model_response_is_rejected",
+      "status": "passed",
+      "duration_seconds": 0.0019,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_normal_chat_does_not_receive_terminal_notice",
+      "status": "passed",
+      "duration_seconds": 0.0022,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_normal_response",
+      "status": "passed",
+      "duration_seconds": 0.001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_previous_history_is_sent_to_model",
+      "status": "passed",
+      "duration_seconds": 0.0009,
+      "details": ""
+    },
+    {
+      "test": "tests.test_chat.TestJammerChat.test_terminal_command_is_not_executed",
+      "status": "passed",
+      "duration_seconds": 0.0009,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_allowed_tool_executes",
+      "status": "passed",
+      "duration_seconds": 0.0006,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_disabled_python_tool_is_blocked",
+      "status": "passed",
+      "duration_seconds": 0.0013,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_disabled_tool_never_reaches_registry",
+      "status": "passed",
+      "duration_seconds": 0.0008,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_invalid_selection_type_raises_type_error",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_missing_tool_name_is_rejected",
+      "status": "passed",
+      "duration_seconds": 0.0009,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_no_tool_selection_does_not_execute",
+      "status": "passed",
+      "duration_seconds": 0.0006,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_tool_exception_is_returned_as_error",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_executor.TestToolExecutor.test_unregistered_tool_is_not_executed",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_healthy_agent",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_missing_activity_logger",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_missing_agent_process",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_missing_executor_interface",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_missing_permission_interface",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_missing_required_tool",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health.TestAgentHealthChecker.test_registry_exception_is_reported",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health_cli.TestHealthCLI.test_healthy_components_return_zero",
+      "status": "passed",
+      "duration_seconds": 0.0021,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health_cli.TestHealthCLI.test_initialization_exception_returns_one",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_health_cli.TestHealthCLI.test_unhealthy_agent_returns_one",
+      "status": "passed",
+      "duration_seconds": 0.0012,
+      "details": ""
+    },
+    {
+      "test": "tests.test_logging.TestActivityLogger.test_log_creates_valid_json_record",
+      "status": "passed",
+      "duration_seconds": 0.0023,
+      "details": ""
+    },
+    {
+      "test": "tests.test_logging.TestActivityLogger.test_long_text_is_truncated",
+      "status": "passed",
+      "duration_seconds": 0.0026,
+      "details": ""
+    },
+    {
+      "test": "tests.test_logging.TestActivityLogger.test_multiple_events_append",
+      "status": "passed",
+      "duration_seconds": 0.0022,
+      "details": ""
+    },
+    {
+      "test": "tests.test_logging.TestActivityLogger.test_sanitization_preserves_json_types",
+      "status": "passed",
+      "duration_seconds": 0.0019,
+      "details": ""
+    },
+    {
+      "test": "tests.test_logging.TestActivityLogger.test_write_failure_does_not_raise",
+      "status": "passed",
+      "duration_seconds": 0.0022,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_add_and_retrieve_memory",
+      "status": "passed",
+      "duration_seconds": 0.0206,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_clear_memories",
+      "status": "passed",
+      "duration_seconds": 0.014,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_default_category",
+      "status": "passed",
+      "duration_seconds": 0.0088,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_delete_existing_memory",
+      "status": "passed",
+      "duration_seconds": 0.0123,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_delete_missing_memory",
+      "status": "passed",
+      "duration_seconds": 0.0064,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_format_empty_memories",
+      "status": "passed",
+      "duration_seconds": 0.0099,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_format_memories",
+      "status": "passed",
+      "duration_seconds": 0.0136,
+      "details": ""
+    },
+    {
+      "test": "tests.test_memory.TestMemoryManager.test_recent_memories_respect_limit",
+      "status": "passed",
+      "duration_seconds": 0.0241,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_disable_tool",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_enable_tool",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_non_boolean_permission_rejected",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_permission_commands",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_permission_status_returns_copy",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_python_execution_disabled_by_default",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_standard_tools_allowed_by_default",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_permissions.TestToolPermissions.test_unknown_tool_rejected",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_add_document_returns_zero_for_empty_chunks",
+      "status": "passed",
+      "duration_seconds": 0.0019,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_add_document_stores_chunks_and_embeddings",
+      "status": "passed",
+      "duration_seconds": 0.0013,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_build_context_formats_sources_and_documents",
+      "status": "passed",
+      "duration_seconds": 0.0009,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_build_context_handles_missing_documents_key",
+      "status": "passed",
+      "duration_seconds": 0.001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_build_context_returns_empty_string_without_documents",
+      "status": "passed",
+      "duration_seconds": 0.002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_build_context_uses_unknown_source_when_metadata_missing",
+      "status": "passed",
+      "duration_seconds": 0.0026,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_chunk_count_delegates_to_store",
+      "status": "passed",
+      "duration_seconds": 0.0027,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_clear_documents_delegates_to_store",
+      "status": "passed",
+      "duration_seconds": 0.0021,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_document_count_counts_unique_documents",
+      "status": "passed",
+      "duration_seconds": 0.0023,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_get_sources_returns_empty_list_without_metadata",
+      "status": "passed",
+      "duration_seconds": 0.0013,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_get_sources_returns_unique_document_names",
+      "status": "passed",
+      "duration_seconds": 0.0012,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_list_documents_delegates_to_store",
+      "status": "passed",
+      "duration_seconds": 0.0014,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_search_delegates_to_retriever",
+      "status": "passed",
+      "duration_seconds": 0.001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRAGPipeline.test_search_uses_default_result_count",
+      "status": "passed",
+      "duration_seconds": 0.0011,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_excludes_results_without_distance",
+      "status": "passed",
+      "duration_seconds": 0.0011,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_filters_by_distance_and_limits_results",
+      "status": "passed",
+      "duration_seconds": 0.0008,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_respects_custom_distance_threshold",
+      "status": "passed",
+      "duration_seconds": 0.0006,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_respects_custom_max_results",
+      "status": "passed",
+      "duration_seconds": 0.001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_returns_empty_store_results",
+      "status": "passed",
+      "duration_seconds": 0.0006,
+      "details": ""
+    },
+    {
+      "test": "tests.test_rag.TestRetriever.test_search_uses_embedding_and_passes_result_count",
+      "status": "passed",
+      "duration_seconds": 0.0007,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_ambiguous_arithmetic_is_not_routed",
+      "status": "passed",
+      "duration_seconds": 0.0015,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_calculation_routes_to_calculator",
+      "status": "passed",
+      "duration_seconds": 0.0007,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_cpu_question_routes_to_system_info",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_empty_input_is_not_routed",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_file_existence_routes_to_filesystem",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_general_question_does_not_force_tool",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_list_files_routes_to_filesystem",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_natural_language_addition",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_natural_language_multiplication",
+      "status": "passed",
+      "duration_seconds": 0.0004,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_natural_language_subtraction_order",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_non_string_input_raises_type_error",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_terminal_command_guard_blocks_launch_patterns",
+      "status": "passed",
+      "duration_seconds": 0.0003,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_terminal_command_guard_does_not_block_normal_questions",
+      "status": "passed",
+      "duration_seconds": 0.0005,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_terminal_command_is_not_selected_as_tool",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_unicode_multiplication_symbol",
+      "status": "passed",
+      "duration_seconds": 0.0002,
+      "details": ""
+    },
+    {
+      "test": "tests.test_selector.TestToolSelector.test_whitespace_input_is_not_routed",
+      "status": "passed",
+      "duration_seconds": 0.0001,
+      "details": ""
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+
+.env
+
+
+instagram_agent/queue/
+
+
+
+# Python environments and cache
+ai_env/
+ml_env/
+venv/
+.venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Logs and local runtime data
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+token.json
+
+# AI model weights
+*.gguf
+*.safetensors
+*.onnx
+
+# Package build files
+build/
+dist/
+*.whl
+llama-cpp-python-*.tar.gz
+llama_cpp_python-*/

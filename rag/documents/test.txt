@@ -1,0 +1,6 @@
+Jammer is a locally running AI assistant.
+Jammer uses the Qwen3-4B language model.
+Jammer runs inference using CUDA.
+The computer has an NVIDIA GTX 1650 GPU.
+Jammer uses local embeddings for document retrieval.
+Jammer uses ChromaDB as its local vector database.
